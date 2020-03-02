@@ -6,6 +6,7 @@ from user_service.serializers import RegistrationSerializer
 
 
 class RegistrationAPIView(APIView):
+    """User registration"""
     permission_classes = (AllowAny,)
     serializer_class = RegistrationSerializer
 

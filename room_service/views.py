@@ -24,7 +24,7 @@ class RoomCreateList(ListModelMixin,
 
 
 class RoomRetrieveDestroy(RetrieveDestroyAPIView):
-    """Delete room by primary key"""
+    """Delete and retrieve room by primary key"""
     queryset = Room.objects.all()
     serializer_class = RoomSerializer
     permission_classes = (IsAuthenticated,)
@@ -37,6 +37,7 @@ class RoomRetrieveDestroy(RetrieveDestroyAPIView):
 
 
 class ReservationCreateList(ListCreateAPIView):
+    """Get all reservations or create reservation"""
     serializer_class = ReservationSerializer
     queryset = Reservation.objects.all()
     permission_classes = (IsAuthenticated,)
