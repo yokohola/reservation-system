@@ -19,7 +19,7 @@
 ```
 POST         /users/register/   - авторизация                                           - `AllowAny`
 GET, POST    /api/rooms/        - список переговорных, создание переговорных            - `Authorized`
-GET, DELETE  /api/rooms/int:pk/ - просмотр переговорной, удаление переговорной        - `Authorized`
+GET, DELETE  /api/rooms/int:pk/ - просмотр переговорной, удаление переговорной          - `Authorized`
 GET, POST    /api/reserve/      - просмотр списка бронирований, создания бронирования   - `Authorized`
 ```
 
@@ -32,7 +32,10 @@ GET, POST    /api/reserve/      - просмотр списка брониров
 }
 ```
 Для получения доступа к api воспользуйтесь (доступно для postman):
-```http://username:password@127.0.0.1:8000/api/...```
+
+```
+http://username:password@127.0.0.1:8000/api/...
+```
   
 ... или укажите header:
 ```
