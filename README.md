@@ -1,8 +1,6 @@
-# reservation-system
-### usages: django, drf, docker/docker-compose, black
+# Reservation-system
 
-### Для зависимостей смотрите: requirements.txt
-
+### Usages: django, drf, docker/docker-compose, black
 
 ### URL - None
 
@@ -15,7 +13,7 @@
 
 
 
-### URL:
+### Routes:
 ```
 POST         /users/register/   - авторизация                                           - `AllowAny`
 GET, POST    /api/rooms/        - список переговорных, создание переговорных            - `Authorized`
