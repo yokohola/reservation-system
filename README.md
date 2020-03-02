@@ -16,13 +16,13 @@
 
 
 
-POST         /users/register/   - авторизация                                         - AllowAny
+- POST         /users/register/   - авторизация                                           - AllowAny
 
-GET, POST    /api/rooms/        - список переговорных, создание переговорных          - Authorized
+- GET, POST    /api/rooms/        - список переговорных, создание переговорных            - Authorized
+ 
+- GET, DELETE  /api/rooms/int:pk/   - просмотр переговорной, удаление переговорной        - Authorized
 
-GET, DELETE  /api/rooms/<pk>/   - просмотр переговорной, удаление переговорной        - Authorized
-  
-GET, POST    /api/reserve/      - просмотр списка бронирований, создания бронирования - Authorized
+- GET, POST    /api/reserve/      - просмотр списка бронирований, создания бронирования   - Authorized
 
 
 Регистрация пользователя:
